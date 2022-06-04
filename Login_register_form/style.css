@@ -69,18 +69,20 @@
     margin-bottom: 2px;
 }
 
-.boxes {
-    padding: 12px 15px;
-    height: 180px;
+.box-container {
+    padding-top: 5px;
+    height: 190px;
     width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.box {
+.box { /*Input boxes in the middle of the form*/
     width: 250px;
     height: 45px;
     left: 89px;
     top: 263px;
-
     color: #141414;
     background-color: aliceblue;
 
@@ -99,17 +101,22 @@
     border-left-width: 1.28px; 
 }
 
-.box1 {
+.box:text {
+    margin: 100px;
+}
+
+.box1 { /*First input box of the form*/
     width: 250px;
     height: 45px;
     left: 89px;
     top: 263px;
     background-color: aliceblue;
+
     border-radius: mixed;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 
     border: 1.28px solid #444;
     border-top-color: rgb(68, 68, 68);
@@ -127,12 +134,13 @@
 }
 
 
-.box2 {
+.box2 { /*Last input box of the form*/
     width: 250px;
     height: 45px;
     left: 89px;
     top: 263px;
     background-color: aliceblue;
+
     border-radius: mixed;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -167,7 +175,7 @@
 
 .login_create-acc a {
     color: #E5E5E5;
-    background-color: #339933;
+    background-color: transparent;
     text-decoration: none;
     font-size: 28px;
     text-shadow: 2px -2px rgb(1 103 1 / 30%);
@@ -175,10 +183,6 @@
 }
 
 .login_create-acc:hover{
-    background-color: #3cb63c;
-}
-
-.login_create-acc a:hover{
     background-color: #3cb63c;
 }
 
@@ -199,6 +203,10 @@
     color: #AAAAAA;
     font-size: 16px;
     margin-block-end: 0px;
+}
+
+.Have_acc a:hover {
+    text-shadow: -1px 1px rgba(220, 235, 220, 0.3);
 }
 
 .Have_acc {
